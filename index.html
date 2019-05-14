@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS</title>
+	
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+
+<div class="bloks">
+	
+	<div class="funkcija">
+	
+	<input id="ievads" type="text"></input>
+	<button onclick="atzime()">Enter</button>
+	</div>
+	
+	<div id="img"></div>
+	
+</div>
+
+<script>
+
+	function atzime() {
+		var element = document.getElementById("ievads").value;
+		
+		if (element <= 3) {
+			document.getElementById("img").innerHTML = '<img style="height: 50px; width: 50px;" src="bad.gif"></img>';
+		}
+		
+	}
+
+</script>
+
+</body>
+</html>
